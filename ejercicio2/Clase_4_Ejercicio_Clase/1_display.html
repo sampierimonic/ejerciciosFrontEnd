@@ -1,0 +1,86 @@
+<html>
+<head>Ejemplos Display</head>
+<body>
+
+<div id="container">
+
+	<!-- 1. Display: none -->
+
+	<style>
+	.no-show {
+	    display: none;
+	}
+	.no-visible {
+		visibility: hidden;
+	}
+	</style>
+
+	<hr></hr>
+	<p>Display: none and visibility: hidden</p>
+
+	<p class="no-show">Hidden element</p>
+	<p class="no-visible">NO visible element</p>
+	<p>Visible element</p>
+
+
+	<!-- 2. Display: inline -->
+	<style>
+	.inline li {
+	    display: inline;
+	}
+	</style>
+
+	<hr></hr>
+	<p>Display: inline</p>
+	<p>Display a list of links as a horizontal menu:</p>
+
+	<ul class="inline">
+	  <li><a href="#">HTML</a></li>
+	  <li><a href="#">CSS</a></li>
+	  <li><a href="#">JavaScript</a></li>
+	</ul>
+
+	<!-- 3. Display: block -->
+	<style>
+	.block span {
+	    display: block;
+	}
+	</style>
+
+	<hr></hr>
+	<p>Display: block</p>
+	<p>Convert a "inline" element in a "block" element</p>
+
+	<div class="block">
+		<span>A display property with a value of "block" results in</span> <span>a line break between the two elements</span> <span> or three elements.</span>
+	</div>
+
+
+	<!-- 4. Display: inline-block -->
+
+	<style>
+	.floating-box {
+	    display: inline-block;
+	    width: 150px;
+	    height: 75px;
+	    margin: 10px;
+	    border: 3px solid #73AD21;  
+	}
+	</style>
+
+	<hr></hr>
+	<p>Display: inline-block</p>
+
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+
+</div>
+
+</body>
+</html>
