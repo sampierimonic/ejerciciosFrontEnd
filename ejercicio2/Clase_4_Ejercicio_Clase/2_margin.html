@@ -1,0 +1,102 @@
+<html>
+<head>Ejemplos margin</head>
+<body>
+
+<div id="container">
+
+	<!-- 1. Margin: 0 -->
+
+	<style>
+		#main1 {
+		  width: 600px;
+		  margin: 0 auto; 
+		}
+	</style>
+
+	<hr></hr>
+	<p>Margin: 0</p>
+	
+	<div id="main1">Curabitur ut ipsum sed odio rhoncus varius. Etiam cursus, purus suscipit aliquet consequat, enim dui iaculis ex, sit amet dignissim tortor nunc a eros. Cras interdum elit id libero semper, sed ultricies risus ullamcorper. Duis dignissim euismod ligula ac cursus. Nulla facilisi. Quisque accumsan neque ut maximus euismod. Mauris ut quam mollis, vestibulum magna ut, sagittis augue. Pellentesque venenatis egestas porta. 
+	</div>
+
+
+	<!-- 2. max-width -->
+
+	<style>
+		#main2 {
+		  max-width: 600px;
+		  margin: 0 auto; 
+		}
+	</style>
+
+	<hr></hr>
+	<p>max-width</p>
+	
+	<div id="main2">Curabitur ut ipsum sed odio rhoncus varius. Etiam cursus, purus suscipit aliquet consequat, enim dui iaculis ex, sit amet dignissim tortor nunc a eros. Cras interdum elit id libero semper, sed ultricies risus ullamcorper. Duis dignissim euismod ligula ac cursus. Nulla facilisi. Quisque accumsan neque ut maximus euismod. Mauris ut quam mollis, vestibulum magna ut, sagittis augue. Pellentesque venenatis egestas porta. 
+	</div>
+
+
+	<!-- 3. box model -->
+
+	<style>
+		.simple {
+		  width: 500px;
+		  margin: 20px auto;
+		  border: 1px solid #73AD21;  
+		}
+
+		.fancy {
+		  width: 500px;
+		  margin: 20px auto;
+		  padding: 50px;
+		  border: 10px solid #73AD21;
+		}
+	</style>
+
+	<hr></hr>
+	<p>Box model</p>
+	
+	<div class="simple">
+		I am smaller!
+	</div>
+	<div class="fancy">
+		I am bigger!
+	</div>
+
+	<!-- 4. box-sizing -->
+
+	<style>
+		.simple2 {
+		  width: 500px;
+		  margin: 20px auto;
+		  border: 1px solid #73AD21;  
+		  -webkit-box-sizing: border-box;
+		     -moz-box-sizing: border-box;
+		          box-sizing: border-box;
+		 
+		}
+		.fancy2 {
+		  width: 500px;
+		  margin: 20px auto;
+		  padding: 50px;
+		  border: 10px solid #73AD21;
+		  -webkit-box-sizing: border-box;
+		     -moz-box-sizing: border-box;
+		          box-sizing: border-box;
+		}
+	</style>
+
+	<hr></hr>
+	<p>box-sizing</p>
+	
+	<div class="simple2">
+		Same size
+	</div>
+	<div class="fancy2">
+		Yupiiiiii!
+	</div>
+
+</div>
+
+</body>
+</html>

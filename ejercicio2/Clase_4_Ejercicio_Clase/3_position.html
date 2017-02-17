@@ -1,0 +1,97 @@
+<html>
+<head>Ejemplos position</head>
+<body>
+
+<div id="container">
+
+	<!-- 1. Position -->
+
+	<style>
+		.static {
+		  position: static;
+		}
+	</style>
+
+	<hr></hr>
+	<p>Position: static</p>
+	
+	<div class="static">Curabitur ut ipsum sed odio rhoncus varius. Etiam cursus, purus suscipit aliquet consequat, enim dui iaculis ex, sit amet dignissim tortor nunc a eros. Cras interdum elit id libero semper, sed ultricies risus ullamcorper. Duis dignissim euismod ligula ac cursus. Nulla facilisi. Quisque accumsan neque ut maximus euismod. Mauris ut quam mollis, vestibulum magna ut, sagittis augue. Pellentesque venenatis egestas porta. 
+	</div>
+
+
+	<!-- 2. Position: relative -->
+
+	<style>
+		.relative1 {
+		  position: relative;
+		  border: 1px solid #d64078;
+		  padding: 40px;
+		}
+		.relative2 {
+		  position: relative;
+		  top: -20px;
+		  left: 20px;
+		  border: 1px solid #73AD21;
+		  width: 500px;
+		  padding: 40px;
+		}
+	</style>
+
+	<hr></hr>
+	<p>Position: relative</p>
+	
+	<div class="relative1">Like a static position</div>
+
+	<div class="relative2">Other behaviour</div>
+
+	<!-- 3. Position: fixed -->
+
+	<style>
+		.fixed {
+		  position: fixed;
+		  bottom: 0;
+		  right: 0;
+		  width: 200px;
+		  border: 1px solid #fdc72f;
+		  padding: 10px;
+		}
+	</style>
+
+	<hr></hr>
+	<p>Position: fixed</p>
+	
+	<div class="fixed">Not take care about me! I am fixed!</div>
+
+	<!-- 4. Position: absolute -->
+
+	<style>
+		.relative {
+		  position: relative;
+		  width: 600px;
+		  height: 400px;
+		  border: 1px solid #d64078;
+		  padding: 40px;
+		}
+		.absolute {
+		  position: absolute;
+		  top: 120px;
+		  right: 0;
+		  width: 300px;
+		  height: 200px;
+		  border: 1px solid #73AD21;
+		  padding: 40px;
+		}
+	</style>
+
+	<hr></hr>
+	<p>Position: absolute</p>
+	
+	<div class="relative">
+		<p>I am a relative box!</p>
+		<div class="absolute">I am an absolute box!</div>
+	</div>
+
+</div>
+
+</body>
+</html>

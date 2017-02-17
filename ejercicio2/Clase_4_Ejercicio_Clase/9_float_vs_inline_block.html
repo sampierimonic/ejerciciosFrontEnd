@@ -1,0 +1,74 @@
+<html>
+<head>Ejemplos Layout float vs inline-block</head>
+<body>
+
+<div id="container">
+
+	<!-- 1. Float -->
+
+	<style>
+	.box {
+	  float: left;
+	  width: 200px;
+	  height: 100px;
+	  margin: 1em;
+	  border: 3px solid #73AD21;  
+	}
+	.after-box {
+	  clear: left;
+	}
+	.other-box {
+		border: 3px solid #d64078;  
+	}
+	</style>
+
+	<hr></hr>
+	<p>Using float</p>
+
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+	<div class="box">Floating box</div>
+
+	<div class="after-box other-box">
+	    <p>Estoy usando clear para no flotar arriba de las cajas. </p>
+	</div> 
+
+
+
+	<!-- 2. Display: inline-block -->
+
+	<style>
+	.floating-box {
+	   	display: inline-block;
+	  	width: 200px;
+	  	height: 100px;
+	  	margin: 1em;
+	    border: 3px solid #73AD21;  
+	}
+	</style>
+
+	<hr></hr>
+	<p>Display: inline-block</p>
+
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+	<div class="floating-box">Floating box</div>
+
+	<div class="other-box">
+	    <p>En este caso no tengo que usar clear. ¡Bien!</p>
+	</div> 
+
+</div>
+
+</body>
+</html>
