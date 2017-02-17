@@ -1,0 +1,19 @@
+body {
+	font-family: "Courier new";
+	font-size: 100%; /* significa que si uso EM la equivalencia será de 1em = 16px*/
+}
+
+h1 {
+	font-size: 2em;
+}
+
+#container {
+	width: 810px;
+	margin: 0 auto;
+}
+
+.column {
+	float: left;
+	width: 250px;
+	margin: 10px;
+}
